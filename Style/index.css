@@ -1,0 +1,95 @@
+/**********************************************************************/
+/*setting*/
+/**********************************************************************/
+/******************setting fonts******************/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+/******************setting colors******************/
+/***Primary***/
+/************Dark Theme************/
+/***Primary***/
+/***Neutral***/
+/************Light Theme************/
+/***Neutral***/
+/*setting page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin-block: 0;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+/*setting body*/
+body {
+  font-size: 14px;
+  background: black;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*Mixin*/
+/*setting link color (footer)*/
+a,
+a:visited {
+  color: rgb(85, 5, 5);
+}
+
+/**********************************************************************/
+/*Main*/
+/**********************************************************************/
+nav {
+  width: 1375px;
+}
+nav .flexnav {
+  display: flex;
+  justify-content: center;
+  gap: 60%;
+}
+nav .flexnav .social {
+  text-align: left;
+}
+nav .flexnav .flexswitch {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+nav .flexnav .flexswitch .switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 72px;
+  height: 26px;
+  padding: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: blue;
+}
+nav .flexnav .flexswitch .switch .dark {
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  background-color: green;
+}
+nav .flexnav .flexswitch .switch .light {
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  margin-left: 4px;
+  background-color: green;
+}
+
+/*****align footer and set size and color*****/
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 20px auto;
+  color: rgb(1, 1, 1);
+}/*# sourceMappingURL=index.css.map */

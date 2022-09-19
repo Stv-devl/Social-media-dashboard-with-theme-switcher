@@ -1,0 +1,47 @@
+/**********************************************************************/
+/*Main*/
+/**********************************************************************/
+
+nav {
+  width: 1375px;
+
+  .flexnav {
+    display: flex;
+    justify-content: center;
+    gap: 60%;
+
+    .social {
+      text-align: left;
+    }
+    .flexswitch {
+      @include row;
+      gap: 10px;
+
+      .switch {
+        @include center;
+        justify-content: flex-start;
+        width: 72px;
+        height: 26px;
+        padding: 5px;
+        border-radius: 15px;
+        cursor: pointer;
+        background-color: blue;
+
+        .dark {
+          width: 18px;
+          height: 18px;
+          border-radius: 100px;
+          background-color: green;
+        }
+
+        .light {
+          width: 18px;
+          height: 18px;
+          border-radius: 100px;
+          margin-left: 4px;
+          background-color: green;
+        }
+      }
+    }
+  }
+}
