@@ -50,7 +50,7 @@ nav {
 nav .flexnav {
   display: flex;
   justify-content: center;
-  gap: 60%;
+  gap: 70%;
 }
 nav .flexnav .social {
   text-align: left;
