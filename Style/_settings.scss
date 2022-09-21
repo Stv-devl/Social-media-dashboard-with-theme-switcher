@@ -15,28 +15,15 @@ $Twitter: hsl(203, 89%, 53%);
 $Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
 $YouTube: hsl(348, 97%, 39%);
 
-/************Dark Theme************/
-/***Primary***/
-
 $Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
 
-/***Neutral***/
+$BG: hsl(230, 17%, 14%); //BG
+$TopBGPattern: hsl(232, 19%, 15%); //Top BG Pattern
+$CardBG: hsl(228, 28%, 20%); //Card BG
+$DesaturatedBlueText: hsl(228, 34%, 66%); //text
+$WhiteText: hsl(0, 0%, 100%); //text
 
-$VeryDarBlue: hsl(230, 17%, 14%); //BG
-$VeryDarkBlue: hsl(232, 19%, 15%); //Top BG Pattern
-$DarkDesaturateBlue: hsl(228, 28%, 20%); //Card BG
-$DesaturatedBlue: hsl(228, 34%, 66%); //text
-$White: hsl(0, 0%, 100%); //text
-
-/************Light Theme************/
-
-$Toggle: hsl(230, 22%, 74%);
-
-/***Neutral***/
-$White: hsl(0, 0%, 100%); //BG
-$VeryPaleBlue: hsl(225, 100%, 98%); //Top BG Pattern
-$LightGrayishBlue: hsl(227, 47%, 96%); //card BG
-$DarkGrayishBlue: hsl(228, 12%, 44%); //Text
+/* setting theme*/
 
 /*setting page*/
 * {
@@ -52,14 +39,40 @@ $DarkGrayishBlue: hsl(228, 12%, 44%); //Text
 
 body {
   font-size: 14px;
-  background: black;
+  background: $BG;
   text-align: center;
-  color: $White;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
+  color: $WhiteText;
+}
+
+body.themedark {
+  --BG: hsl(230, 17%, 14%);
+  --TopBGPattern: hsl(232, 19%, 15%);
+  --CardBG: hsl(228, 28%, 20%);
+  --DesaturatedBlueText: hsl(228, 34%, 66%);
+  --WhiteText: hsl(0, 0%, 100%);
+  --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+}
+body.themelight {
+  --BG: hsl(0, 0%, 100%);
+  --TopBGPattern: hsl(225, 100%, 98%);
+  --CardBG: hsl(227, 47%, 96%);
+  --DesaturatedBlueText: hsl(228, 12%, 44%);
+  --WhiteText: hsl(230, 17%, 14%);
+  --Toggle: hsl(230, 22%, 74%);
+}
+
+/*setting text*/
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 0.7rem;
+  color: $DesaturatedBlueText;
 }
 
 /*Mixin*/
@@ -77,5 +90,5 @@ body {
 /*setting link color (footer)*/
 a,
 a:visited {
-  color: rgb(85, 5, 5);
+  color: rgb(154, 6, 6);
 }

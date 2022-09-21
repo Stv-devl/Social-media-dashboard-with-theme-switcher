@@ -2,13 +2,19 @@
 /*Main*/
 /**********************************************************************/
 
-nav {
-  width: 1375px;
+main {
+  @include center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 90%;
+  margin: 0 auto;
 
   .flexnav {
-    display: flex;
-    justify-content: center;
-    gap: 70%;
+    @include center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $TopBGPattern;
+    height: 245px;
 
     .social {
       text-align: left;
@@ -17,7 +23,7 @@ nav {
       @include row;
       gap: 10px;
 
-      .switch {
+      .switchs {
         @include center;
         justify-content: flex-start;
         width: 72px;
@@ -42,6 +48,47 @@ nav {
           background-color: green;
         }
       }
+    }
+  }
+
+  .board1 {
+    display: grid;
+    width: 100%;
+    height: 216px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+
+    .nathanfb,
+    .nathantw,
+    .nathaninsta,
+    .nathanytb {
+      background-color: $CardBG;
+    }
+  }
+
+  .overview {
+    margin: 20px 0;
+  }
+
+  .board2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 25px;
+
+    .page,
+    .likefb,
+    .likeig,
+    .profileig,
+    .retweettw,
+    .liketw,
+    .likeytb,
+    .viewytb {
+      background-color: $CardBG;
+      height: 125px;
     }
   }
 }
