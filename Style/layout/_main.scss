@@ -1,69 +1,39 @@
-/**********************************************************************/
-/*Main*/
-/**********************************************************************/
-
+/********************************************************************/
+/*******************************Main*******************************/
+/********************************************************************/
 main {
-  @include center;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 90%;
-  margin: 0 auto;
-
-  .flexnav {
-    @include center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: $TopBGPattern;
-    height: 245px;
-
-    .social {
-      text-align: left;
-    }
-    .flexswitch {
-      @include row;
-      gap: 10px;
-
-      .switchs {
-        @include center;
-        justify-content: flex-start;
-        width: 72px;
-        height: 26px;
-        padding: 5px;
-        border-radius: 15px;
-        cursor: pointer;
-        background-color: blue;
-
-        .dark {
-          width: 18px;
-          height: 18px;
-          border-radius: 100px;
-          background-color: green;
-        }
-
-        .light {
-          width: 18px;
-          height: 18px;
-          border-radius: 100px;
-          margin-left: 4px;
-          background-color: green;
-        }
-      }
-    }
-  }
+  width: 100%;
 
   .board1 {
     display: grid;
-    width: 100%;
+    width: 80%;
     height: 216px;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 30px;
+    margin: 0 auto;
+    transform: translateY(-108px);
 
     .nathanfb,
     .nathantw,
     .nathaninsta,
     .nathanytb {
-      background-color: $CardBG;
+      background-color: var(--CardBG);
+      border-radius: 4px;
+    }
+
+    .nathanfb {
+      border-top: 6px solid $Facebook;
+    }
+    .nathantw {
+      border-top: 6px solid $Twitter;
+    }
+    .nathaninsta {
+      border-top: 6px solid $Instagram;
+    }
+    .nathanytb {
+      border-top: 6px solid $YouTube;
     }
   }
 
@@ -73,11 +43,12 @@ main {
 
   .board2 {
     display: grid;
-    width: 100%;
+    width: 80%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
     row-gap: 25px;
+    margin: 0 auto;
 
     .page,
     .likefb,

@@ -1,7 +1,7 @@
-/**********************************************************************/
-/*Setting colors*/
-/**********************************************************************/
-/* setting color*/
+/********************************************************************/
+/***************************Setting colors***************************/
+/********************************************************************/
+/*******add color to body*******/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 body.themedark {
   --BG: hsl(230deg, 17%, 14%);
@@ -9,7 +9,6 @@ body.themedark {
   --CardBG: hsl(228deg, 28%, 20%);
   --DesaturatedBlueText: hsl(228deg, 34%, 66%);
   --WhiteText: hsl(0deg, 0%, 100%);
-  --Toggle: linear gradient hsl(210deg, 78%, 56%) to hsl(146deg, 68%, 55%);
 }
 
 body.themelight {
@@ -18,14 +17,13 @@ body.themelight {
   --CardBG: hsl(227deg, 47%, 96%);
   --DesaturatedBlueText: hsl(228deg, 12%, 44%);
   --WhiteText: hsl(230deg, 17%, 14%);
-  --Toggle: linear gradient hsl(210deg, 78%, 56%) to hsl(146deg, 68%, 55%);
 }
 
-/**********************************************************************/
-/*setting*/
-/**********************************************************************/
+/*********************************************************************/
+/*******************************setting*******************************/
+/*********************************************************************/
 /******************setting fonts******************/
-/*setting page*/
+/******************setting page******************/
 * {
   margin: 0;
   padding: 0;
@@ -36,17 +34,22 @@ body.themelight {
   font-family: "Inter", sans-serif;
 }
 
-/*setting body*/
+/******************setting body******************/
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
   font-size: 14px;
   background-color: var(--BG);
   text-align: center;
   color: var(--WhiteText);
 }
 
-/*setting text*/
+/******************setting text******************/
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
 
 h2 {
@@ -54,97 +57,123 @@ h2 {
 }
 
 h3 {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--DesaturatedBlueText);
 }
 
-/*Mixin*/
-/*setting link color (footer)*/
+/******************setting Mixin*******************/
+/******************setting link color (footer)*******************/
 a,
 a:visited {
   color: rgb(154, 6, 6);
 }
 
-/**********************************************************************/
-/*Main*/
-/**********************************************************************/
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 90%;
-  margin: 0 auto;
+/*********************************************************************/
+/*********************************Nav*********************************/
+/*********************************************************************/
+nav {
+  width: 100%;
+  height: 245px;
+  background-color: var(--TopBGPattern);
+  position: relative;
 }
-main .flexnav {
+nav .flexnav {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  width: 100%;
-  background-color: hsl(232deg, 19%, 15%);
-  height: 245px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 42px;
 }
-main .flexnav .social {
+nav .flexnav .social {
   text-align: left;
 }
-main .flexnav .flexswitch {
+nav .flexnav .flexswitch {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-main .flexnav .flexswitch .switchs {
+nav .flexnav .flexswitch p {
+  margin-top: 5px;
+  font-weight: 700;
+}
+nav .flexnav .flexswitch .switchs {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: flex-start;
-  width: 72px;
-  height: 26px;
+  width: 50px;
+  height: 27px;
   padding: 5px;
   border-radius: 15px;
   cursor: pointer;
-  background-color: blue;
+  background-color: hsl(210deg, 78%, 56%);
 }
-main .flexnav .flexswitch .switchs .dark {
+nav .flexnav .flexswitch .switchs .dark {
   width: 18px;
   height: 18px;
   border-radius: 100px;
-  background-color: green;
+  background-color: var(--TopBGPattern);
+  opacity: 1;
 }
-main .flexnav .flexswitch .switchs .light {
+nav .flexnav .flexswitch .switchs .light {
   width: 18px;
   height: 18px;
   border-radius: 100px;
   margin-left: 4px;
-  background-color: green;
+  background-color: var(--TopBGPattern);
+  opacity: 1;
+}
+
+/********************************************************************/
+/*******************************Main*******************************/
+/********************************************************************/
+main {
+  width: 100%;
 }
 main .board1 {
   display: grid;
-  width: 100%;
+  width: 80%;
   height: 216px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  margin: 0 auto;
+  transform: translateY(-108px);
 }
 main .board1 .nathanfb,
 main .board1 .nathantw,
 main .board1 .nathaninsta,
 main .board1 .nathanytb {
-  background-color: hsl(228deg, 28%, 20%);
+  background-color: var(--CardBG);
+  border-radius: 4px;
+}
+main .board1 .nathanfb {
+  border-top: 6px solid hsl(208deg, 92%, 53%);
+}
+main .board1 .nathantw {
+  border-top: 6px solid hsl(203deg, 89%, 53%);
+}
+main .board1 .nathaninsta {
+  border-top: 6px solid hsl(37deg, 97%, 70%) to hsl(329deg, 70%, 58%);
+}
+main .board1 .nathanytb {
+  border-top: 6px solid hsl(348deg, 97%, 39%);
 }
 main .overview {
   margin: 20px 0;
 }
 main .board2 {
   display: grid;
-  width: 100%;
+  width: 80%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 25px;
+  margin: 0 auto;
 }
 main .board2 .page,
 main .board2 .likefb,
@@ -158,7 +187,9 @@ main .board2 .viewytb {
   height: 125px;
 }
 
-/*****align footer and set size and color*****/
+/********************************************************************/
+/*******************************Footer*******************************/
+/********************************************************************/
 footer {
   text-align: center;
   font-size: 0.8rem;
