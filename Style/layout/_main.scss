@@ -7,7 +7,6 @@ main {
   .board1 {
     display: grid;
     width: 80%;
-    height: 216px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 30px;
@@ -18,12 +17,25 @@ main {
     .nathantw,
     .nathaninsta,
     .nathanytb {
+      height: 216px;
       background-color: var(--CardBG);
       border-radius: 4px;
       cursor: pointer;
 
       &:hover {
         background: var(--CardBGHover);
+      }
+
+      h3 {
+        margin-top: 26px;
+      }
+
+      h2 {
+        margin: 26px 0 10px 0;
+      }
+
+      h5 {
+        margin-bottom: 26px;
       }
     }
 
@@ -33,10 +45,14 @@ main {
     .nathantw {
       border-top: 6px solid $Twitter;
     }
+
+    .nathaninsta {
+      height: 216px;
+    }
     .gradianttop {
       height: 6px;
       width: 100%;
-      border-radius: 4px 0;
+      border-radius: 4px 4px 0 0;
       background: linear-gradient(
         to right,
         hsl(37, 97%, 70%),
@@ -70,8 +86,13 @@ main {
     .liketw,
     .likeytb,
     .viewytb {
-      background-color: $CardBG;
+      background-color: var(--CardBG);
       height: 125px;
+
+      &:hover {
+        background: var(--CardBGHover);
+        cursor: pointer;
+      }
     }
   }
 }

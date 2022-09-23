@@ -5,7 +5,7 @@
 /******************setting fonts******************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-/******************setting page******************/
+/******************setting page & body******************/
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,6 @@
   font-weight: 700;
 }
 
-/******************setting body******************/
 body {
   display: flex;
   flex-direction: column;
@@ -34,7 +33,7 @@ h1 {
   margin-bottom: 5px;
 }
 h2 {
-  font-size: 3.4rem;
+  font-size: 3rem;
 }
 h3 {
   font-size: 0.8rem;
@@ -42,19 +41,20 @@ h3 {
 }
 
 h5 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
-
   color: var(--DesaturatedBlueText);
 }
 
 p {
   color: $LimeGreen;
+  font-size: 0.8rem;
 }
 
 p.negativ {
+  font-size: 0.8rem;
   color: $BrightRed;
 }
 /******************setting Mixin*******************/

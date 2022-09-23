@@ -22,9 +22,10 @@ nav {
       @include row;
       gap: 10px;
 
-      p {
+      p.mode {
         margin-top: 5px;
         font-weight: 700;
+        color: var(--WhiteText);
       }
 
       .switchs {

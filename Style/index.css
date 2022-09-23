@@ -25,7 +25,7 @@ body.themelight {
 /*******************************setting*******************************/
 /*********************************************************************/
 /******************setting fonts******************/
-/******************setting page******************/
+/******************setting page & body******************/
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +37,6 @@ body.themelight {
   font-weight: 700;
 }
 
-/******************setting body******************/
 body {
   display: flex;
   flex-direction: column;
@@ -56,7 +55,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.4rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -65,7 +64,7 @@ h3 {
 }
 
 h5 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -74,9 +73,11 @@ h5 {
 
 p {
   color: hsl(163deg, 72%, 41%);
+  font-size: 0.8rem;
 }
 
 p.negativ {
+  font-size: 0.8rem;
   color: hsl(356deg, 69%, 56%);
 }
 
@@ -113,9 +114,10 @@ nav .flexnav .flexswitch {
   flex-direction: row;
   gap: 10px;
 }
-nav .flexnav .flexswitch p {
+nav .flexnav .flexswitch p.mode {
   margin-top: 5px;
   font-weight: 700;
+  color: var(--WhiteText);
 }
 nav .flexnav .flexswitch .switchs {
   display: flex;
@@ -154,7 +156,6 @@ main {
 main .board1 {
   display: grid;
   width: 80%;
-  height: 216px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   -moz-column-gap: 30px;
@@ -166,6 +167,7 @@ main .board1 .nathanfb,
 main .board1 .nathantw,
 main .board1 .nathaninsta,
 main .board1 .nathanytb {
+  height: 216px;
   background-color: var(--CardBG);
   border-radius: 4px;
   cursor: pointer;
@@ -176,16 +178,37 @@ main .board1 .nathaninsta:hover,
 main .board1 .nathanytb:hover {
   background: var(--CardBGHover);
 }
+main .board1 .nathanfb h3,
+main .board1 .nathantw h3,
+main .board1 .nathaninsta h3,
+main .board1 .nathanytb h3 {
+  margin-top: 26px;
+}
+main .board1 .nathanfb h2,
+main .board1 .nathantw h2,
+main .board1 .nathaninsta h2,
+main .board1 .nathanytb h2 {
+  margin: 26px 0 10px 0;
+}
+main .board1 .nathanfb h5,
+main .board1 .nathantw h5,
+main .board1 .nathaninsta h5,
+main .board1 .nathanytb h5 {
+  margin-bottom: 26px;
+}
 main .board1 .nathanfb {
   border-top: 6px solid hsl(208deg, 92%, 53%);
 }
 main .board1 .nathantw {
   border-top: 6px solid hsl(203deg, 89%, 53%);
 }
+main .board1 .nathaninsta {
+  height: 216px;
+}
 main .board1 .gradianttop {
   height: 6px;
   width: 100%;
-  border-radius: 4px 0;
+  border-radius: 4px 4px 0 0;
   background: linear-gradient(to right, hsl(37deg, 97%, 70%), hsl(329deg, 70%, 58%));
 }
 main .board1 .nathanytb {
@@ -212,8 +235,19 @@ main .board2 .retweettw,
 main .board2 .liketw,
 main .board2 .likeytb,
 main .board2 .viewytb {
-  background-color: hsl(228deg, 28%, 20%);
+  background-color: var(--CardBG);
   height: 125px;
+}
+main .board2 .page:hover,
+main .board2 .likefb:hover,
+main .board2 .likeig:hover,
+main .board2 .profileig:hover,
+main .board2 .retweettw:hover,
+main .board2 .liketw:hover,
+main .board2 .likeytb:hover,
+main .board2 .viewytb:hover {
+  background: var(--CardBGHover);
+  cursor: pointer;
 }
 
 /********************************************************************/
