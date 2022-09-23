@@ -102,7 +102,7 @@ nav .flexnav {
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   padding-top: 42px;
 }
@@ -144,7 +144,7 @@ nav .flexnav .flexswitch .switchs .light {
   border-radius: 100px;
   margin-left: 5px;
   background-color: var(--CardBG);
-  opacity: 1;
+  opacity: 0;
 }
 
 /********************************************************************/
@@ -155,7 +155,7 @@ main {
 }
 main .board1 {
   display: grid;
-  width: 80%;
+  width: 85%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   -moz-column-gap: 30px;
@@ -219,7 +219,7 @@ main .overview {
 }
 main .board2 {
   display: grid;
-  width: 80%;
+  width: 85%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   -moz-column-gap: 30px;

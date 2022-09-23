@@ -6,7 +6,7 @@ main {
 
   .board1 {
     display: grid;
-    width: 80%;
+    width: 85%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 30px;
@@ -71,7 +71,7 @@ main {
 
   .board2 {
     display: grid;
-    width: 80%;
+    width: 85%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
