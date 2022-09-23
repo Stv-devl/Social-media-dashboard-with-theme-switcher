@@ -31,17 +31,17 @@ nav {
         @include center;
         justify-content: flex-start;
         width: 50px;
-        height: 27px;
-        padding: 5px;
+        height: 26px;
+        padding: 4px;
         border-radius: 15px;
         cursor: pointer;
-        background-color: hsl(210, 78%, 56%);
+        background: $BgGradian;
 
         .dark {
           width: 18px;
           height: 18px;
           border-radius: 100px;
-          background-color: var(--TopBGPattern);
+          background-color: var(--CardBG);
           opacity: 1;
         }
 
@@ -49,8 +49,8 @@ nav {
           width: 18px;
           height: 18px;
           border-radius: 100px;
-          margin-left: 4px;
-          background-color: var(--TopBGPattern);
+          margin-left: 5px;
+          background-color: var(--CardBG);
           opacity: 1;
         }
       }

@@ -8,7 +8,6 @@ main {
     display: grid;
     width: 80%;
     height: 216px;
-
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 30px;
@@ -21,6 +20,11 @@ main {
     .nathanytb {
       background-color: var(--CardBG);
       border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--CardBGHover);
+      }
     }
 
     .nathanfb {
@@ -29,9 +33,17 @@ main {
     .nathantw {
       border-top: 6px solid $Twitter;
     }
-    .nathaninsta {
-      border-top: 6px solid $Instagram;
+    .gradianttop {
+      height: 6px;
+      width: 100%;
+      border-radius: 4px 0;
+      background: linear-gradient(
+        to right,
+        hsl(37, 97%, 70%),
+        hsl(329, 70%, 58%)
+      );
     }
+
     .nathanytb {
       border-top: 6px solid $YouTube;
     }

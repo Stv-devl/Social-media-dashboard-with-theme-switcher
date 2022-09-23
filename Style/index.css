@@ -7,6 +7,7 @@ body.themedark {
   --BG: hsl(230deg, 17%, 14%);
   --TopBGPattern: hsl(232deg, 19%, 15%);
   --CardBG: hsl(228deg, 28%, 20%);
+  --CardBGHover: hsl(230deg, 26%, 28%);
   --DesaturatedBlueText: hsl(228deg, 34%, 66%);
   --WhiteText: hsl(0deg, 0%, 100%);
 }
@@ -15,6 +16,7 @@ body.themelight {
   --BG: hsl(0deg, 0%, 100%);
   --TopBGPattern: hsl(225deg, 100%, 98%);
   --CardBG: hsl(227deg, 47%, 96%);
+  --CardBGHover: hsl(225deg, 13%, 87%);
   --DesaturatedBlueText: hsl(228deg, 12%, 44%);
   --WhiteText: hsl(230deg, 17%, 14%);
 }
@@ -32,6 +34,7 @@ body.themelight {
   margin-block: 0;
   outline: none;
   font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 /******************setting body******************/
@@ -53,7 +56,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 3.4rem;
 }
 
 h3 {
@@ -61,8 +64,24 @@ h3 {
   color: var(--DesaturatedBlueText);
 }
 
+h5 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--DesaturatedBlueText);
+}
+
+p {
+  color: hsl(163deg, 72%, 41%);
+}
+
+p.negativ {
+  color: hsl(356deg, 69%, 56%);
+}
+
 /******************setting Mixin*******************/
-/******************setting link color (footer)*******************/
+/******************setting link color*******************/
 a,
 a:visited {
   color: rgb(154, 6, 6);
@@ -104,25 +123,25 @@ nav .flexnav .flexswitch .switchs {
   justify-content: center;
   justify-content: flex-start;
   width: 50px;
-  height: 27px;
-  padding: 5px;
+  height: 26px;
+  padding: 4px;
   border-radius: 15px;
   cursor: pointer;
-  background-color: hsl(210deg, 78%, 56%);
+  background: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
 }
 nav .flexnav .flexswitch .switchs .dark {
   width: 18px;
   height: 18px;
   border-radius: 100px;
-  background-color: var(--TopBGPattern);
+  background-color: var(--CardBG);
   opacity: 1;
 }
 nav .flexnav .flexswitch .switchs .light {
   width: 18px;
   height: 18px;
   border-radius: 100px;
-  margin-left: 4px;
-  background-color: var(--TopBGPattern);
+  margin-left: 5px;
+  background-color: var(--CardBG);
   opacity: 1;
 }
 
@@ -149,6 +168,13 @@ main .board1 .nathaninsta,
 main .board1 .nathanytb {
   background-color: var(--CardBG);
   border-radius: 4px;
+  cursor: pointer;
+}
+main .board1 .nathanfb:hover,
+main .board1 .nathantw:hover,
+main .board1 .nathaninsta:hover,
+main .board1 .nathanytb:hover {
+  background: var(--CardBGHover);
 }
 main .board1 .nathanfb {
   border-top: 6px solid hsl(208deg, 92%, 53%);
@@ -156,8 +182,11 @@ main .board1 .nathanfb {
 main .board1 .nathantw {
   border-top: 6px solid hsl(203deg, 89%, 53%);
 }
-main .board1 .nathaninsta {
-  border-top: 6px solid hsl(37deg, 97%, 70%) to hsl(329deg, 70%, 58%);
+main .board1 .gradianttop {
+  height: 6px;
+  width: 100%;
+  border-radius: 4px 0;
+  background: linear-gradient(to right, hsl(37deg, 97%, 70%), hsl(329deg, 70%, 58%));
 }
 main .board1 .nathanytb {
   border-top: 6px solid hsl(348deg, 97%, 39%);
