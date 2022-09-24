@@ -1,30 +1,11 @@
 /********************************************************************/
 /***************************Setting colors***************************/
 /********************************************************************/
-/*******add color to body*******/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-body.themedark {
-  --BG: hsl(230deg, 17%, 14%);
-  --TopBGPattern: hsl(232deg, 19%, 15%);
-  --CardBG: hsl(228deg, 28%, 20%);
-  --CardBGHover: hsl(230deg, 26%, 28%);
-  --DesaturatedBlueText: hsl(228deg, 34%, 66%);
-  --WhiteText: hsl(0deg, 0%, 100%);
-}
-
-body.themelight {
-  --BG: hsl(0deg, 0%, 100%);
-  --TopBGPattern: hsl(225deg, 100%, 98%);
-  --CardBG: hsl(227deg, 47%, 96%);
-  --CardBGHover: hsl(225deg, 13%, 87%);
-  --DesaturatedBlueText: hsl(228deg, 12%, 44%);
-  --WhiteText: hsl(230deg, 17%, 14%);
-}
-
 /*********************************************************************/
 /*******************************setting*******************************/
 /*********************************************************************/
 /******************setting fonts******************/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 /******************setting page & body******************/
 * {
   margin: 0;
@@ -48,6 +29,26 @@ body {
   color: var(--WhiteText);
 }
 
+body.themedark {
+  --BG: hsl(230deg, 17%, 14%);
+  --TopBGPattern: hsl(232deg, 19%, 15%);
+  --CardBG: hsl(228deg, 28%, 20%);
+  --CardBGHover: hsl(230deg, 26%, 28%);
+  --DesaturatedBlueText: hsl(228deg, 34%, 66%);
+  --WhiteText: hsl(0deg, 0%, 100%);
+  --BgGradian: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+
+body.themelight {
+  --BG: hsl(0deg, 0%, 100%);
+  --TopBGPattern: hsl(225deg, 100%, 98%);
+  --CardBG: hsl(227deg, 47%, 96%);
+  --CardBGHover: hsl(225deg, 13%, 87%);
+  --DesaturatedBlueText: hsl(228deg, 12%, 44%);
+  --WhiteText: hsl(230deg, 17%, 14%);
+  --BgGradian: hsl(230deg, 22%, 74%);
+}
+
 /******************setting text******************/
 h1 {
   font-size: 1.5rem;
@@ -61,6 +62,10 @@ h2 {
 h3 {
   font-size: 0.8rem;
   color: var(--DesaturatedBlueText);
+}
+
+h4 {
+  font-size: 1.5rem;
 }
 
 h5 {
@@ -79,6 +84,12 @@ p {
 p.negativ {
   font-size: 0.8rem;
   color: hsl(356deg, 69%, 56%);
+}
+
+/******************setting img*******************/
+img {
+  width: 20px;
+  height: 20px;
 }
 
 /******************setting Mixin*******************/
@@ -129,7 +140,7 @@ nav .flexnav .flexswitch .switchs {
   padding: 4px;
   border-radius: 15px;
   cursor: pointer;
-  background: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+  background: var(--BgGradian);
 }
 nav .flexnav .flexswitch .switchs .dark {
   width: 18px;
@@ -157,6 +168,31 @@ main .board1 {
        column-gap: 30px;
   margin: 0 auto;
   transform: translateY(-108px);
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 835px) {
+  main .board1 {
+    display: block;
+  }
+}
+main .board1 .mediaflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 26px;
+}
+main .board1 .flexicone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+main .board1 .flexicone img {
+  height: 4px;
+  width: 8px;
 }
 main .board1 .nathanfb,
 main .board1 .nathantw,
@@ -166,6 +202,17 @@ main .board1 .nathanytb {
   background-color: var(--CardBG);
   border-radius: 4px;
   cursor: pointer;
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 835px) {
+  main .board1 .nathanfb,
+main .board1 .nathantw,
+main .board1 .nathaninsta,
+main .board1 .nathanytb {
+    width: 85%;
+    margin: 30px auto auto;
+  }
 }
 main .board1 .nathanfb:hover,
 main .board1 .nathantw:hover,
@@ -173,17 +220,11 @@ main .board1 .nathaninsta:hover,
 main .board1 .nathanytb:hover {
   background: var(--CardBGHover);
 }
-main .board1 .nathanfb h3,
-main .board1 .nathantw h3,
-main .board1 .nathaninsta h3,
-main .board1 .nathanytb h3 {
-  margin-top: 26px;
-}
 main .board1 .nathanfb h2,
 main .board1 .nathantw h2,
 main .board1 .nathaninsta h2,
 main .board1 .nathanytb h2 {
-  margin: 26px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 main .board1 .nathanfb h5,
 main .board1 .nathantw h5,
@@ -197,9 +238,6 @@ main .board1 .nathanfb {
 main .board1 .nathantw {
   border-top: 6px solid hsl(203deg, 89%, 53%);
 }
-main .board1 .nathaninsta {
-  height: 216px;
-}
 main .board1 .gradianttop {
   height: 6px;
   width: 100%;
@@ -210,7 +248,18 @@ main .board1 .nathanytb {
   border-top: 6px solid hsl(348deg, 97%, 39%);
 }
 main .overview {
-  margin: 20px 0;
+  text-align: left;
+  width: 85%;
+  margin: auto;
+  transform: translateY(-60px);
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 835px) {
+  main .overview {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 main .board2 {
   display: grid;
@@ -221,6 +270,62 @@ main .board2 {
        column-gap: 30px;
   row-gap: 25px;
   margin: 0 auto;
+  transform: translateY(-38px);
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 835px) {
+  main .board2 {
+    display: block;
+  }
+}
+main .board2 .page,
+main .board2 .likefb,
+main .board2 .likeig,
+main .board2 .profileig,
+main .board2 .retweettw,
+main .board2 .liketw,
+main .board2 .likeytb,
+main .board2 .viewytb {
+  padding: 28px;
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 835px) {
+  main .board2 .page,
+main .board2 .likefb,
+main .board2 .likeig,
+main .board2 .profileig,
+main .board2 .retweettw,
+main .board2 .liketw,
+main .board2 .likeytb,
+main .board2 .viewytb {
+    width: 85%;
+    margin: 20px auto auto;
+  }
+}
+main .board2 .mediaflex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+main .board2 .mediaflex3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .board2 .flexicone2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+main .board2 .flexicone2 img {
+  width: 8px;
+  height: 4px;
 }
 main .board2 .page,
 main .board2 .likefb,
@@ -232,6 +337,7 @@ main .board2 .likeytb,
 main .board2 .viewytb {
   background-color: var(--CardBG);
   height: 125px;
+  border-radius: 4px;
 }
 main .board2 .page:hover,
 main .board2 .likefb:hover,

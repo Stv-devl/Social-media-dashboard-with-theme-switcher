@@ -13,6 +13,27 @@ main {
     margin: 0 auto;
     transform: translateY(-108px);
 
+    /********************Media********************/
+    @media screen and (max-width: 835px) {
+      display: block;
+    }
+    /*********************************************/
+
+    .mediaflex {
+      @include rowcenter;
+      gap: 10px;
+      margin-top: 26px;
+    }
+    .flexicone {
+      @include rowcenter;
+      align-items: center;
+      gap: 5px;
+
+      img {
+        height: 4px;
+        width: 8px;
+      }
+    }
     .nathanfb,
     .nathantw,
     .nathaninsta,
@@ -22,16 +43,19 @@ main {
       border-radius: 4px;
       cursor: pointer;
 
+      /********************Media********************/
+      @media screen and (max-width: 835px) {
+        width: 85%;
+        margin: 30px auto auto;
+      }
+      /*********************************************/
+
       &:hover {
         background: var(--CardBGHover);
       }
 
-      h3 {
-        margin-top: 26px;
-      }
-
       h2 {
-        margin: 26px 0 10px 0;
+        margin: 20px 0 10px 0;
       }
 
       h5 {
@@ -46,9 +70,6 @@ main {
       border-top: 6px solid $Twitter;
     }
 
-    .nathaninsta {
-      height: 216px;
-    }
     .gradianttop {
       height: 6px;
       width: 100%;
@@ -66,7 +87,17 @@ main {
   }
 
   .overview {
-    margin: 20px 0;
+    text-align: left;
+    width: 85%;
+    margin: auto;
+    transform: translateY(-60px);
+
+    /********************Media********************/
+    @media screen and (max-width: 835px) {
+      width: 85%;
+      margin: 0 auto;
+    }
+    /*********************************************/
   }
 
   .board2 {
@@ -77,7 +108,50 @@ main {
     column-gap: 30px;
     row-gap: 25px;
     margin: 0 auto;
+    transform: translateY(-38px);
 
+    /********************Media********************/
+    @media screen and (max-width: 835px) {
+      display: block;
+    }
+    /*********************************************/
+    .page,
+    .likefb,
+    .likeig,
+    .profileig,
+    .retweettw,
+    .liketw,
+    .likeytb,
+    .viewytb {
+      padding: 28px;
+
+      /********************Media********************/
+      @media screen and (max-width: 835px) {
+        width: 85%;
+        margin: 20px auto auto;
+      }
+      /*********************************************/
+    }
+    .mediaflex2 {
+      @include rowspacebetween;
+      margin-bottom: 24px;
+    }
+
+    .mediaflex3 {
+      @include rowspacebetween;
+      align-items: center;
+    }
+
+    .flexicone2 {
+      @include rowcenter;
+      align-items: center;
+      gap: 5px;
+
+      img {
+        width: 8px;
+        height: 4px;
+      }
+    }
     .page,
     .likefb,
     .likeig,
@@ -88,6 +162,7 @@ main {
     .viewytb {
       background-color: var(--CardBG);
       height: 125px;
+      border-radius: 4px;
 
       &:hover {
         background: var(--CardBGHover);

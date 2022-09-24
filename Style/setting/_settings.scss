@@ -27,6 +27,27 @@ body {
   text-align: center;
   color: var(--WhiteText);
 }
+
+body.themedark {
+  --BG: #{$Bgdark};
+  --TopBGPattern: #{$TopBGPatterndark};
+  --CardBG: #{$CardBGdark};
+  --CardBGHover: #{$CardBGHoverdark};
+  --DesaturatedBlueText: #{$DesaturatedBlueTextdark};
+  --WhiteText: #{$WhiteTextdark};
+  --BgGradian: #{$BgGradiandark};
+}
+
+body.themelight {
+  --BG: #{$Bglight};
+  --TopBGPattern: #{$TopBGPatternlight};
+  --CardBG: #{$CardBGlight};
+  --CardBGHover: #{$CardBGHoverlight};
+  --DesaturatedBlueText: #{$DesaturatedBlueTextlight};
+  --WhiteText: #{$VeryDarkBlueTextlight};
+  --BgGradian: #{$BgGradianlight};
+}
+
 /******************setting text******************/
 h1 {
   font-size: 1.5rem;
@@ -38,6 +59,10 @@ h2 {
 h3 {
   font-size: 0.8rem;
   color: var(--DesaturatedBlueText);
+}
+
+h4 {
+  font-size: 1.5rem;
 }
 
 h5 {
@@ -57,17 +82,34 @@ p.negativ {
   font-size: 0.8rem;
   color: $BrightRed;
 }
-/******************setting Mixin*******************/
 
+/******************setting img*******************/
+img {
+  width: 20px;
+  height: 20px;
+}
+
+/******************setting Mixin*******************/
 @mixin center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 @mixin row {
   display: flex;
   flex-direction: row;
+}
+
+@mixin rowcenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin rowspacebetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /******************setting link color*******************/
