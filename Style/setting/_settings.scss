@@ -79,6 +79,11 @@ p.negativ {
   color: $BrightRed;
 }
 
+p.number {
+  font-size: 1.5rem;
+  color: var(--WhiteText);
+}
+
 /******************setting img*******************/
 img {
   width: 20px;
