@@ -56,24 +56,24 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
-}
-
-h3 {
   font-size: 0.8rem;
   color: var(--DesaturatedBlueText);
 }
 
-h4 {
-  font-size: 1.5rem;
+h3 {
+  font-size: 3rem;
 }
 
-h5 {
+h4 {
   font-size: 0.7rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: var(--DesaturatedBlueText);
+}
+
+h5 {
+  font-size: 1.5rem;
 }
 
 p {
@@ -259,16 +259,16 @@ main .board1 .nathaninsta:hover,
 main .board1 .nathanytb:hover {
   background: var(--CardBGHover);
 }
-main .board1 .nathanfb h2,
-main .board1 .nathantw h2,
-main .board1 .nathaninsta h2,
-main .board1 .nathanytb h2 {
+main .board1 .nathanfb h3,
+main .board1 .nathantw h3,
+main .board1 .nathaninsta h3,
+main .board1 .nathanytb h3 {
   margin: 20px 0 10px 0;
 }
-main .board1 .nathanfb h5,
-main .board1 .nathantw h5,
-main .board1 .nathaninsta h5,
-main .board1 .nathanytb h5 {
+main .board1 .nathanfb h4,
+main .board1 .nathantw h4,
+main .board1 .nathaninsta h4,
+main .board1 .nathanytb h4 {
   margin-bottom: 26px;
 }
 main .board1 .nathanfb {

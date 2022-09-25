@@ -54,30 +54,26 @@ h1 {
   margin-bottom: 5px;
 }
 h2 {
-  font-size: 3rem;
-}
-h3 {
   font-size: 0.8rem;
   color: var(--DesaturatedBlueText);
 }
-
-h4 {
-  font-size: 1.5rem;
+h3 {
+  font-size: 3rem;
 }
-
-h5 {
+h4 {
   font-size: 0.7rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: var(--DesaturatedBlueText);
 }
-
+h5 {
+  font-size: 1.5rem;
+}
 p {
   color: $LimeGreen;
   font-size: 0.8rem;
 }
-
 p.negativ {
   font-size: 0.8rem;
   color: $BrightRed;
