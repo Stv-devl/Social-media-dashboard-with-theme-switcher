@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./Screenshot/Screenshot%20social%20media%20dashboard%20with%20theme%20switcher.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Stv-devl/Social-media-dashboard-with-theme-switcher)
+- Live Site URL: [Add live site URL here](https://stv-devl.github.io/Social-media-dashboard-with-theme-switcher/)
 
 ## My process
 
@@ -54,5 +54,5 @@ Next will be the calculator theme switcher with 3 differents themes
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Github](https://github.com/Stv-devl)
+- Frontend Mentor - [@Stv-devl](https://www.frontendmentor.io/profile/Stv-devl)
