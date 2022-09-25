@@ -116,6 +116,13 @@ nav .flexnav {
   width: 85%;
   margin: 0 auto;
   padding-top: 42px;
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 419px) {
+  nav .flexnav {
+    display: block;
+  }
 }
 nav .flexnav .social {
   text-align: left;
@@ -124,11 +131,27 @@ nav .flexnav .flexswitch {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 419px) {
+  nav .flexnav .flexswitch {
+    justify-content: space-between;
+    border-top: 1px solid rgb(163, 161, 161);
+    margin-top: 20px;
+  }
 }
 nav .flexnav .flexswitch p.mode {
   margin-top: 5px;
   font-weight: 700;
-  color: var(--WhiteText);
+  color: var(--DesaturatedBlueText);
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 419px) {
+  nav .flexnav .flexswitch p.mode {
+    margin-top: 15px;
+  }
 }
 nav .flexnav .flexswitch .switchs {
   display: flex;
@@ -141,6 +164,16 @@ nav .flexnav .flexswitch .switchs {
   border-radius: 15px;
   cursor: pointer;
   background: var(--BgGradian);
+  /********************Media********************/
+  /*********************************************/
+}
+nav .flexnav .flexswitch .switchs:hover {
+  background: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+@media screen and (max-width: 419px) {
+  nav .flexnav .flexswitch .switchs {
+    margin-top: 15px;
+  }
 }
 nav .flexnav .flexswitch .switchs .dark {
   width: 18px;
@@ -154,10 +187,12 @@ nav .flexnav .flexswitch .switchs .darkclicked {
 }
 
 /********************************************************************/
-/*******************************Main*******************************/
+/********************************Main********************************/
 /********************************************************************/
 main {
   width: 100%;
+  /******************************Board1******************************/
+  /*****************************Board2*****************************/
 }
 main .board1 {
   display: grid;
@@ -174,6 +209,11 @@ main .board1 {
 @media screen and (max-width: 835px) {
   main .board1 {
     display: block;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .board1 {
+    transform: translateY(-85px);
   }
 }
 main .board1 .mediaflex {
@@ -210,7 +250,6 @@ main .board1 .nathanytb {
 main .board1 .nathantw,
 main .board1 .nathaninsta,
 main .board1 .nathanytb {
-    width: 85%;
     margin: 30px auto auto;
   }
 }
@@ -252,14 +291,6 @@ main .overview {
   width: 85%;
   margin: auto;
   transform: translateY(-60px);
-  /********************Media********************/
-  /*********************************************/
-}
-@media screen and (max-width: 835px) {
-  main .overview {
-    width: 85%;
-    margin: 0 auto;
-  }
 }
 main .board2 {
   display: grid;
@@ -300,8 +331,7 @@ main .board2 .retweettw,
 main .board2 .liketw,
 main .board2 .likeytb,
 main .board2 .viewytb {
-    width: 85%;
-    margin: 20px auto auto;
+    margin-bottom: 20px;
   }
 }
 main .board2 .mediaflex2 {

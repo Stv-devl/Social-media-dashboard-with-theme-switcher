@@ -15,6 +15,12 @@ nav {
     margin: 0 auto;
     padding-top: 42px;
 
+    /********************Media********************/
+    @media screen and (max-width: 419px) {
+      display: block;
+    }
+    /*********************************************/
+
     .social {
       text-align: left;
     }
@@ -22,10 +28,24 @@ nav {
       @include row;
       gap: 10px;
 
+      /********************Media********************/
+      @media screen and (max-width: 419px) {
+        justify-content: space-between;
+        border-top: 1px solid rgb(163, 161, 161);
+        margin-top: 20px;
+      }
+      /*********************************************/
+
       p.mode {
         margin-top: 5px;
         font-weight: 700;
-        color: var(--WhiteText);
+        color: var(--DesaturatedBlueText);
+
+        /********************Media********************/
+        @media screen and (max-width: 419px) {
+          margin-top: 15px;
+        }
+        /*********************************************/
       }
 
       .switchs {
@@ -37,6 +57,16 @@ nav {
         border-radius: 15px;
         cursor: pointer;
         background: var(--BgGradian);
+
+        &:hover {
+          background: $BgGradian;
+        }
+
+        /********************Media********************/
+        @media screen and (max-width: 419px) {
+          margin-top: 15px;
+        }
+        /*********************************************/
 
         .dark {
           width: 18px;
