@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Stv-devl/Social-media-dashboard-with-theme-switcher)
-- Live Site URL: [Add live site URL here](https://stv-devl.github.io/Social-media-dashboard-with-theme-switcher/)
+- Solution URL: [Github](https://github.com/Stv-devl/Social-media-dashboard-with-theme-switcher)
+- Live Site URL: [Live site](https://stv-devl.github.io/Social-media-dashboard-with-theme-switcher/)
 
 ## My process
 
